@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#section1">Tasks</a></li>
+      <li><a href="#section2">Progress</a></li>
+    </ul>
+  </nav>
+
+  <section id="section1">
+    <h2>Task Board</h2>
+    <div class="task-columns">
+      <div class="column" id="todo">
+        <h3>To Do</h3>
+        <div class="task" draggable="true">Design homepage UI</div>
+        <div class="task" draggable="true">Write login logic</div>
+        <div class="task" draggable="true">Create database schema</div>
+      </div>
+      <div class="column" id="in-progress">
+        <h3>In Progress</h3>
+        <div class="task" draggable="true">Build task board layout</div>
+      </div>
+      <div class="column" id="done">
+        <h3>Done</h3>
+        <div class="task" draggable="true">Set up project folder</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2">
+    <h2>Task Summary</h2>
+    <p>Real-time task updates will be shown here.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
